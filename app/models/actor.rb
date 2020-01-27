@@ -13,7 +13,7 @@ class Actor < ActiveRecord::Base
         self.characters.map { |character|"#{character.name} - #{character.show.name}"}
     end
 
-    
+
 
 
 

@@ -1,4 +1,4 @@
-# TV Land Active Record Associations Lab
+# TV Land Active Record Aasociations Lab
 
 ## Objectives
 
