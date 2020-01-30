@@ -12,5 +12,8 @@ class Actor < ActiveRecord::Base
     self.shows.each{|show| result = "#{show.characters[0].name} - #{show.name}"}
     result
   end
-  
+
 end
+
+
+

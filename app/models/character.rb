@@ -5,7 +5,4 @@ class Character < ActiveRecord::Base
   def say_that_thing_you_say
       "Steve Urkel always says: #{self.catchphrase}"
   end
-  def actors_list
-      self.actors
-  end
 end
