@@ -8,7 +8,6 @@ class Show < ActiveRecord::Base
   end
 
   def build_network(call_letters)
-    network = Network.create(call_letters)
-    self.network_id = network.id
+    Network.create(call_letters).shows << self
   end
 end
