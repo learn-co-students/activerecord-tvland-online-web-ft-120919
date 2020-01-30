@@ -6,9 +6,4 @@ class Show < ActiveRecord::Base
   def actors_list
     self.actors.map {|a| a.full_name}
   end
-
-  def build_network(call_letters)
-    Network.find_or_create_by(call_letters).shows << self
-    binding.pry
-  end
 end
