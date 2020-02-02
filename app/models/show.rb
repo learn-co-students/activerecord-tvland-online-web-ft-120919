@@ -4,9 +4,11 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    array = []
-    actors_name = self.actors.each {|actor| actor.full_name}
-    array << actors_name
-    array
+    # array = []
+    actors_name = self.characters.collect {|c| c.actor.full_name}
+    actors_name.flatten
+    # array << actors_name
+    # array.flatten
+    # binding.pry
   end 
 end
