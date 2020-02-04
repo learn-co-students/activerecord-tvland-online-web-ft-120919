@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
    
   
-  attr_accessor :genre, :name 
+ # attr_accessor :genre, :name 
   
   
   
