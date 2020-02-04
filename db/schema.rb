@@ -29,7 +29,12 @@ ActiveRecord::Schema.define(version: 9) do
     t.integer "channel"
   end
 
-# Could not dump table "shows" because of following StandardError
-#   Unknown type '' for column 'season'
+  create_table "shows", force: :cascade do |t|
+    t.string "name"
+    t.integer "network_id"
+    t.string "day"
+    t.string "season"
+    t.string "genre"
+  end
 
 end
