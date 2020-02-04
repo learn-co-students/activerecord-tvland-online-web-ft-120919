@@ -4,9 +4,12 @@ class Show < ActiveRecord::Base
   belongs_to :network
   belongs_to :genre 
   
+  
+  
   def actors_list 
-    shows.actors do 
-      actors.full_name.collect[]
+    self.actors.each do |actor|
+      actor.full_name 
+      
     end 
   end 
   
